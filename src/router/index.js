@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ExampleOne from '@/components/ExampleOne'
 
 Vue.use(Router)
 
@@ -8,8 +7,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'ExampleOne',
-      component: ExampleOne
-    }
+      name: 'homepage',
+      component: resolve => void(require(['../components/homepage.vue'], resolve))
+    },
+      {
+          path: '/MyPhoto',
+          name: 'MyPhoto',
+          component: resolve => void(require(['../components/MyPhoto.vue'], resolve))
+      }
   ]
 })
