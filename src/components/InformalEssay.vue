@@ -2,25 +2,6 @@
     <div>
         <article>
             <div class="l_box">
-                <div class="about_me">
-                    <h2>关于我</h2>
-                    <ul>
-                        <i><img src="../assets/logo.png"></i>
-                        <p><b>GYJ</b>，一个90后草根女站长！19年入行。一直潜心研究web前端技术，
-                            一边工作一边积累经验，分享一些个人博客，以及页面优化等心得。</p>
-                    </ul>
-                </div>
-                <div class="wdxc">
-                    <h2>我的相册</h2>
-                    <ul>
-                        <li><a href="/"><img src="../assets/logo.png"></a></li>
-                        <li><a href="/"><img src="../assets/logo.png"></a></li>
-                        <li><a href="/"><img src="../assets/logo.png"></a></li>
-                        <li><a href="/"><img src="../assets/logo.png"></a></li>
-                        <li><a href="/"><img src="../assets/logo.png"></a></li>
-                        <li><a href="/"><img src="../assets/logo.png"></a></li>
-                    </ul>
-                </div>
                 <div class="search">
                     <form action="/" method="post" name="searchform" id="searchform">
                         <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
@@ -52,10 +33,34 @@
                         <li><a href="/">个人博客模板《绅士》后台管理</a></li>
                     </ul>
                 </div>
-                <div class="links">
-                    <h2>友情链接</h2>
+                <div class="tuijian">
+                    <h2>点击排行</h2>
                     <ul>
-                        <a href="https://www.cnblogs.com/gongyijie/">从前有一个香蕉个人博客  博客</a>
+                        <li><a href="/">你是什么人便会遇上什么人</a></li>
+                        <li><a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></li>
+                        <li><a href="/">第二届 优秀个人博客模板比赛参选活动</a></li>
+                        <li><a href="/">个人博客模板《绅士》后台管理</a></li>
+                        <li><a href="/">你是什么人便会遇上什么人</a></li>
+                        <li><a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></li>
+                        <li><a href="/">第二届 优秀个人博客模板比赛参选活动</a></li>
+                        <li><a href="/">个人博客模板《绅士》后台管理</a></li>
+                    </ul>
+                </div>
+                <div class="cloud">
+                    <h2>标签云</h2>
+                    <ul>
+                        <a href="/">陌上花开</a>
+                        <a href="/">校园生活</a>
+                        <a href="/">html5</a>
+                        <a href="/">SumSung</a>
+                        <a href="/">青春</a>
+                        <a href="/">温暖</a>
+                        <a href="/">阳光</a>
+                        <a href="/">三星</a>
+                        <a href="/">索尼</a>
+                        <a href="/">华维荣耀</a>
+                        <a href="/">三星</a>
+                        <a href="/">索尼</a>
                     </ul>
                 </div>
                 <div class="guanzhu">
@@ -128,200 +133,33 @@
     </div>
 </template>
 
-
 <style>
-    article {
-        width: 1000px;
-        margin: auto;
-        overflow: hidden;
-    }
-    a {
-        text-decoration: none;
-        color: #555;
-    }
-    h2{
-        margin: 0;
-    }
-    .l_box {
-        width: 30%;
-        float: left;
-    }
-    .r_box {
-        width: 68%;
-        float: right;
-    }
-    .r_box ul{
-        margin: 0;
-    }
-    .l_box h2 {
-        color: #333;
-        font-size: 14px;
-        line-height: 30px;
-        padding-left: 20px;
-        background: #fff;
-    }
-    .l_box div {
-        background: rgba(255,255,255,0.5);
-        margin-bottom: 20px;
-        overflow: hidden;
-    }
-    .l_box div ul {
-        padding: 10px;
-        overflow: hidden;
-    }
-    .about_me img {
-        width: 100%;
-    }
-    .about_me p {
+    .cloud ul a {
         line-height: 24px;
-        font-size: 14px;
-    }
-    .about_me i {
-        width: 120px;
-        float: left;
-        clear: left;
-        margin-right: 10px;
-        height: 90px;
-        overflow: hidden;
-    }
-    .wdxc li {
-        width: 32%;
-        overflow: hidden;
-        float: left;
-        height: 80px;
-        margin-bottom: 2px;
-        margin-right: 2px;
-    }
-    .wdxc li img {
-        height: 100%;
-        min-height: 80px;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-    .wdxc li img:hover {
-        transform: scale(1.05);
-    }
-    .l_box .search {
-        border: 1px solid #c93282;
-        background: #c93282;
-        border-radius: 0 5px 5px 0;
-        position: relative;
-    }
-    .search input.input_submit {
-        border: 0;
-        background: 0;
-        color: #fff;
-        outline: none;
-        position: absolute;
-        top: 10px;
-        right: 8%
-    }
-    .search input.input_text {
-        border: 0;
-        line-height: 36px;
-        height: 36px;
-        width: 72%;
-        padding-left: 10px;
-        outline: none;
-    }
-    .fenlei li {
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
-    .tuijian li {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        margin-bottom: 5px;
-        background: url(../assets/li.png) left center no-repeat;
-        padding-left: 20px;
-    }
-    .links a {
+        height: 24px;
         display: block;
+        background: #999;
         float: left;
-        margin: 0 10px 5px 0;
-    }
-    .guanzhu img {
-        width: 100%;
-    }
-    .r_box li {
-        background: rgba(255,255,255,0.8);
-        padding: 15px;
-        overflow: hidden;
-        color: #797b7c;
-        margin-bottom: 15px;
-    }
-    .r_box li h3 {
-        font-size: 16px;
-        line-height: 25px;
-        text-shadow: #FFF 1px 1px 1px;
-    }
-    .r_box li h3 a {
-        color: #222;
-    }
-    .r_box li h3 a:hover {
-        color: #000;
-        text-decoration: underline;
-    }
-    .r_box li img {
-        float: right;
-        clear: right;
-        width: 100%;
-        -webkit-transition: all 0.5s;
+        padding: 3px 11px;
+        margin: 10px 10px 0 0;
+        border-radius: 8px;
         -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
+        color: #FFF;
     }
-    .r_box li i {
-        width: 150px;
-        display: block;
-        max-height: 100px;
-        overflow: hidden;
-        float: right;
-        margin-left: 20px;
-    }
-    .r_box li p {
-        margin: 20px 0 0 0;
-        line-height: 22px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-    }
-    .r_box li:hover img {
-        transform: scale(1.05);
-    }
-    .r_box li:hover h3 a {
-        color: #C93282;
-    }
-    .pagelist {
-        text-align: center;
-        color: #666;
-        width: 100%;
-        clear: both;
-        margin: 20px 0;
-        padding-top: 20px;
-    }
-    .pagelist a {
-        color: #666;
-        margin: 0 2px;
-        border: 1px solid #fff;
-        padding: 5px 10px;
-        background: #FFF;
-    }
-    .pagelist a:hover {
-        color: #C93282;
-    }
-    .pagelist > b {
-        border: 1px solid #000;
-        padding: 5px 10px;
-    }
-    .guanzhu ul{
-        margin: 0;
-    }
-
-
+    .cloud ul a:nth-child(8n-7) { background: #8A9B0F }
+    .cloud ul a:nth-child(8n-6) { background: #EB6841 }
+    .cloud ul a:nth-child(8n-5) { background: #3FB8AF }
+    .cloud ul a:nth-child(8n-4) { background: #FE4365 }
+    .cloud ul a:nth-child(8n-3) { background: #FC9D9A }
+    .cloud ul a:nth-child(8n-2) { background: #EDC951 }
+    .cloud ul a:nth-child(8n-1) { background: #C8C8A9 }
+    .cloud ul a:nth-child(8n) { background: #83AF9B }
+    .cloud ul a:first-child { background: #036564 }
+    .cloud ul a:last-child { background: #3299BB }
+    .cloud ul a:hover { border-radius: 0; text-shadow: #000 1px 1px 1px }
 
 
     @media screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -334,7 +172,7 @@
             width:96%;
             margin:auto;
         }
-        .picbox ul {
+        .picbox ul{
             width: 23%;
         }
         .tuijian,.guanzhu{
@@ -367,7 +205,7 @@
         .l_box{
             display:none;
         }
-        .r_box{
+        .r_box,{
             width:100%;
         }
         .pagelist a {
@@ -391,6 +229,9 @@
         .l_box{
             display:none;
         }
+        .r_box{
+            width:100%;
+        }
         .pagelist a {
             padding: 2px 3px;
             margin:0;
@@ -413,16 +254,3 @@
         }
     }
 </style>
-
-
-<script>
-    import { } from 'mint-ui';
-    export default {
-        name: 'homepage',
-        data() {
-            return {
-
-            }
-        }
-    }
-</script>
